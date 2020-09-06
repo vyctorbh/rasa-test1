@@ -23,8 +23,11 @@ services:
       - ./bot/:/bot/
     ports:
       - 5004:5004
+      - 5002:5002
     depends_on:
       - actions
+    env_file:
+      - ./env/bot-x.env
 
   # ================================= RASA X ==================================
   # Rasa X container
@@ -33,6 +36,8 @@ services:
       context: .
       dockerfile: ./docker/bot.Dockerfile
     restart: unless-stopped
+    env_file:
+      - ./env/bot-x.env
     volumes:
       - ./bot/:/bot/
     ports:

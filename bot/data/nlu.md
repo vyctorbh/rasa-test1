@@ -5,6 +5,10 @@
 - bom dia
 - boa tarde
 - boa noite
+- ola
+- oi
+- pode me ajudar
+- ajudar
 
 ## intent:despedir
 - tchau
@@ -350,7 +354,6 @@
 ## intent:filhos
 - Você tem [filhos](filhos)?
 - [filhos](filhos)?
-- Você tem [filhos](filhos)?
 - [filho](filhos)
 - [filha](filhos)
 - [filhas](filhos)?
@@ -485,6 +488,7 @@
 - ri
 - rachei
 - morri
+
 ## intent:out_of_scope
 - você fala sobre o meio ambiente
 - qual a origem do mundo
@@ -497,7 +501,6 @@
 - babaca
 - feio
 - burro
-
 
 ## intent:elogios
 - você é muito educado
@@ -540,6 +543,8 @@
 - nenhum
 - nunca
 - jamais
+- nego
+- cancelo
 
 ## intent:diga_mais
 - como funciona
@@ -577,11 +582,11 @@
 - joia
 - joinha
 
-## intent: o_que_sei_falar
+## intent:o_que_sei_falar
 - sobre o que você sabe falar
 - o que mais você sabe falar
 - quais assuntos você fala
-- o que você sabe 
+- o que você sabe
 - lista de assuntos possiveis
 - quais as perguntas vc responde
 - quais as perquisar você responde
@@ -606,12 +611,6 @@
 - confirmo
 - afirmo
 - claro
-
-## intent:negar
-- não
-- nao
-- nego
-- cancelo
 
 ## intent:objetivo
 - Qual o seu objetivo robo?
