@@ -27,14 +27,14 @@ build-coach:
 	docker-compose build --no-cache coach
 
 build-analytics:
-	#docker-compose up -d elasticsearch
-	#docker-compose up -d rabbitmq
-	#docker-compose up -d rabbitmq-consumer
+	docker-compose up -d elasticsearch
+	docker-compose up -d rabbitmq
+	docker-compose up -d rabbitmq-consumer
 	docker-compose up -d kibana
 	# This sleep time is a work arround the main objetive is run the following command when elasticsearch is ready
 	# The following command is needed just once for project. It's just a setup onfiguration script.
 	#sleep 30
-	#docker-compose run --rm -v $(current_dir)/modules/analytics/setup_elastic.py:/analytics/setup_elastic.py bot python /analytics/setup_elastic.py
+	docker-compose run --rm -v $(current_dir)/modules/analytics/setup_elastic.py:/analytics/setup_elastic.py bot python /analytics/setup_elastic.py
 	#docker-compose run --rm -v $(current_dir)/modules/analytics/:/analytics/ bot python /analytics/import_dashboards.py
 	#$(info )
 	#$(info Não se esqueça de atualizar o arquivo endpoints.yml)
